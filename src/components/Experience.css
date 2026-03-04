@@ -1,0 +1,144 @@
+.experience-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.experience-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #1a1a1a;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4a5568;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #4a5568;
+}
+
+.timeline-item.current .timeline-marker {
+  background: #8B5CF6;
+  box-shadow: 0 0 0 2px #8B5CF6;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px #8B5CF6, 0 0 0 4px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 2px #8B5CF6, 0 0 0 8px rgba(139, 92, 246, 0);
+  }
+}
+
+.timeline-content {
+  padding-left: 1.5rem;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timeline-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+}
+
+.timeline-period {
+  font-size: 0.875rem;
+  color: #666666;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.timeline-organization {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-description {
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -1.5rem;
+  }
+
+  .timeline-content {
+    padding-left: 1rem;
+  }
+
+  .timeline-role {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .timeline-period {
+    white-space: normal;
+  }
+}

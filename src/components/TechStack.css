@@ -1,0 +1,182 @@
+.tech-stack-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+
+.tech-stack-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tech-category {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.category-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+}
+
+.tech-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-item {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  background-color: #ffffff !important;
+  border: 2px solid #e0e0e0;
+  min-width: 100px;
+}
+
+.tech-icon-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+}
+
+.tech-items-icons {
+  gap: 1rem;
+}
+
+/* Brand Colors for Each Icon */
+.tech-icon svg {
+  color: #000000;
+}
+
+.tech-icon[title="JavaScript"] svg {
+  color: #F7DF1E;
+}
+
+.tech-icon[title="Python"] svg {
+  color: #3776AB;
+}
+
+.tech-icon[title="C"] svg {
+  color: #A8B9CC;
+}
+
+.tech-icon[title="Java"] svg {
+  color: #007396;
+}
+
+.tech-icon[title="React"] svg {
+  color: #61DAFB;
+}
+
+.tech-icon[title="Vite"] svg {
+  color: #646CFF;
+}
+
+.tech-icon[title="Node.js"] svg {
+  color: #339933;
+}
+
+.tech-icon[title="Git"] svg {
+  color: #F05032;
+}
+
+.tech-icon[title="VS Code"] svg {
+  color: #007ACC;
+}
+
+.tech-icon[title="npm"] svg {
+  color: #CB3837;
+}
+
+.tech-icon[title="TypeScript"] svg {
+  color: #3178C6;
+}
+
+.tech-icon[title="Next.js"] svg {
+  color: #000000;
+}
+
+.tech-item.learning {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.tech-item.learning:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tech-category {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .tech-item {
+    font-size: 0.8125rem;
+    padding: 0.4rem 0.875rem;
+  }
+}
