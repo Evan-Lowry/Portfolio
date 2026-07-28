@@ -22,8 +22,8 @@ export const projects = [
     title: "3D Rendering Engine",
     description: "Software-only rendering engine built from first principles with custom rasterization pipeline. Includes perspective-correct UV interpolation, back-face culling, OBJ mesh importer with materials and textures, and AABB collision detection.",
     tags: ["Java", "3D Graphics", "Computer Vision", "Math"],
-    github: "https://github.com/evan-lowry/3d-rendering-engine",
-    demo: null,
+    github: "https://github.com/Evan-Lowry/3D-Engine-main",
+    demo: "/3D_Graphics.mov",
     media: "/3D_Graphics.mov" // Add your gif/video URL here
   }
 ]
