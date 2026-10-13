@@ -2,6 +2,8 @@
 
 A minimalist portfolio website built with React and Vite to showcase projects and skills.
 
+**[Resume (PDF)](./Resume.pdf)**
+
 ## 🚀 Getting Started
 
 ### Prerequisites
